@@ -1,0 +1,58 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# 補完
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = 'let g:deoplete#enable_at_startup = 1'
+
+[[plugins]]
+repo = 'fishbullet/deoplete-ruby'
+
+[[plugins]]
+repo = 'carlitux/deoplete-ternjs'
+hook_post_update = '''
+  let g:dein#plugin.build = 'npm install -g tern'
+'''
+
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+if   = '''!has('nvim')'''
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+if   = '''!has('nvim')'''
+
+[[plugins]]
+repo = 'posva/vim-vue'
+
+# 表示
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'alpaca-tc/vim-endwise.git'
+
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
+
+[[plugins]]
+repo = 'rking/ag.vim'
+
+# syntax
+[[plugins]]
+repo = 'w0rp/ale'
+
+hook_add = 'let g:ale_sign_column_always = 1'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+
+[[plugins]]
+repo = 'sekel/vim-vue-syntastic'
